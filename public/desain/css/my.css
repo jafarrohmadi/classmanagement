@@ -1,0 +1,67 @@
+#preview {
+	width: 200px;
+	height: 200px;
+}
+
+#btn-file{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+
+}
+
+.has-error .form-control {
+  border-color: #e0003b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.invalid-block {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 90%;
+  color: #dc3545;
+}
+.commentupload {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 90%;
+}
+.logo-user{
+  width: auto;
+  height: 30px;
+}
+.title-user{
+  font-size: 70%;
+}
+
+#partitioned {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-color: transparent;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  background-position-y: bottom;
+  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  width: fit-content;
+}
