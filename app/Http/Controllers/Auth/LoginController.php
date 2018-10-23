@@ -6,6 +6,7 @@ use App\Models\Otp;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Lang;
 
 class LoginController extends Controller
 {
@@ -66,13 +67,13 @@ class LoginController extends Controller
             return redirect('/login')->withErrors([
                 "Unable to send verification code"
             ]);
-        }
+        }else{
 
         return redirect()->back()
-            ->withInputs()
             ->withErrors([
                 $this->username() => Lang::get('auth.failed'),
             ]);
+        }
     }
     /**
      * Show second factor form
